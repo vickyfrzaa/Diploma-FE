@@ -21525,3 +21525,21 @@ svg:not(:root) {
     transform: translate3d(-2000px, 0, 0);
   }
 }
+
+/* Search */
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #000;
+  padding-top: 5px;
+}
