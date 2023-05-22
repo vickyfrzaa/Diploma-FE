@@ -151,7 +151,7 @@
           <li class="nav-item">
             <a class="nav-link" href="kerjaSama.html">
               <i class="fas fa-user-friends"></i>
-              <span class="menu-title">Kerja Sama ( Upload Mou )</span>
+              <span class="menu-title">Mitra Kerjasama</span>
             </a>
           </li>
           <li class="nav-item">
@@ -214,6 +214,12 @@
             </div>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="anggaran.html">
+              <i class="fas fa-wallet"></i>
+              <span class="menu-title">Relasi Anggaran</span>
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="dokumentasi.html">
               <i class="fas fa-book"></i>
               <span class="menu-title">Dokumentasi</span>
@@ -237,19 +243,58 @@
             <div class="col-12 grid-margin">
               <div class="card card-download">
                 <div class="card-body">
-                  <!-- <div class="row justify-content-between">
-                    <div class="col-md-6 pt-1">
-                      <h4 class="card-title fs-3">User Activity</h4>
+                  <div class="row justify-content-between">
+                    <div class="col-md-6 mb-4">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Add Dokumentasi
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Form Dokumentasi</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form class="row g-3">
+                                <div class="col-12">
+                                  <label for="judulDoku" class="form-label">Judul Dokumentasi</label>
+                                  <input type="text" class="form-control" id="judulDoku">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="satuanKerja" class="form-label">Satuan Kerja</label>
+                                  <input type="text" class="form-control" id="satuanKerja">
+                                </div>
+
+                                <div class="col-6">
+                                  <label for="persGdrive" class="form-label">Pers Gdrive</label>
+                                  <input type="text" class="form-control" id="persGdrive">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="fotoGdrive" class="form-label">Foto Gdrive</label>
+                                  <input type="text" class="form-control" id="fotoGdrive">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="fileGdrive" class="form-label">Files Gdrive</label>
+                                  <input type="text" class="form-control" id="fileGdrive">
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-4 mb-3">
-                      <select id="inputState" class="form-select">
-                        <option selected>Status</option>
-                        <option>Done</option>
-                        <option>Reject</option>
-                        <option>Progress</option>
-                      </select>
-                    </div>
-                  </div> -->
+                  </div>
                   <div class="table-responsive">
                     <table class="table text-center">
                       <thead>

@@ -151,7 +151,7 @@
           <li class="nav-item">
             <a class="nav-link" href="kerjaSama.html">
               <i class="fas fa-user-friends"></i>
-              <span class="menu-title">Kerja Sama ( Upload Mou )</span>
+              <span class="menu-title">Mitra Kerjasama</span>
             </a>
           </li>
           <li class="nav-item">
@@ -214,6 +214,12 @@
             </div>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="anggaran.html">
+              <i class="fas fa-wallet"></i>
+              <span class="menu-title">Relasi Anggaran</span>
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="dokumentasi.html">
               <i class="fas fa-book"></i>
               <span class="menu-title">Dokumentasi</span>
@@ -236,17 +242,67 @@
           </div>
 
           <div class="row">
-            <div class="col-md-7 grid-margin stretch-card">
+            <div class="col-md-4 mb-3">
+              <select id="inputState" class="form-select">
+                <option selected>Periode</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <div class="clearfix">
                     <div class="row justify-content-between">
-                      <div class="col-md-6 pt-1">
-                        <h4 class="card-title float-left">Report Mahasiswa</h4>
+                      <div class="col-md-12 pt-1 mb-3">
+                        <h4 class="card-title float-left">Laporan Mahasiswa</h4>
+                      </div>
+                    </div>
+                    <div id="visit-sale-chart-legend"
+                      class="rounded-legend legend-horizontal legend-top-right float-right"></div>
+                  </div>
+                  <canvas id="visit-sale-chart" class="mt-4"></canvas>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-md-5 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Grafik</h4>
+                  <canvas id="traffic-chart"></canvas>
+                  <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4"></div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Line chart</h4>
+                  <canvas id="lineChart" style="height:250px"></canvas>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-md-7 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <div class="clearfix">
+                    <div class="row justify-content-between">
+                      <div class="col-md-12 pt-1">
+                        <h4 class="card-title float-left">Laporan Mahasiswa</h4>
                       </div>
                       <div class="col-md-4 mb-3">
                         <select id="inputState" class="form-select">
-                          <option selected>Periode</option>
+                          <option selected>Satuan Kerja</option>
                           <option>2020</option>
                           <option>2021</option>
                           <option>2022</option>
@@ -262,17 +318,9 @@
                   <canvas id="visit-sale-chart" class="mt-4"></canvas>
                 </div>
               </div>
-            </div>
-            <div class="col-md-5 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Grafik</h4>
-                  <canvas id="traffic-chart"></canvas>
-                  <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4"></div>
-                </div>
-              </div>
-            </div>
+            </div> -->
           </div>
+
           <div class="row">
             <div class="col-12 grid-margin">
               <div class="card card-download">
