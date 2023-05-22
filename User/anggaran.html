@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>User</title>
+  <title>Sekretariat</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
@@ -154,7 +154,6 @@
               <span class="menu-title">Mitra Kerjasama</span>
             </a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#table" aria-expanded="false" aria-controls="ui-basic">
               <i class="fas fa-folder-open"></i>
@@ -204,8 +203,8 @@
           <div class="page-header">
             <h3 class="page-title">
               <span class="page-title-icon bg-gradient-primary text-white me-2">
-                <i class="fas fa-book"></i>
-              </span> Dokumentasi
+                <i class="fas fa-wallet"></i>
+              </span> Realisasi Anggaran
             </h3>
           </div>
 
@@ -218,7 +217,7 @@
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
-                        Add Dokumentasi
+                        Add Anggaran
                       </button>
 
                       <!-- Modal -->
@@ -227,32 +226,40 @@
                         <div class="modal-dialog modal-dialog-centered modal-xl">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Form Dokumentasi</h1>
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Form Anggaran</h1>
                               <button type="button" class="btn-close" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                               <form class="row g-3">
-                                <div class="col-12">
-                                  <label for="judulDoku" class="form-label">Judul Dokumentasi</label>
-                                  <input type="text" class="form-control" id="judulDoku">
-                                </div>
                                 <div class="col-md-6">
                                   <label for="satuanKerja" class="form-label">Satuan Kerja</label>
-                                  <input type="text" class="form-control" id="satuanKerja">
+                                  <input type="type" class="form-control" id="satuanKerja">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="uraian" class="form-label">Uraian</label>
+                                  <input type="text" class="form-control" id="uraian">
                                 </div>
 
                                 <div class="col-6">
-                                  <label for="persGdrive" class="form-label">Pers Gdrive</label>
-                                  <input type="text" class="form-control" id="persGdrive">
+                                  <label for="pagu" class="form-label">Pagu</label>
+                                  <input type="text" class="form-control" id="pagu">
+                                </div>
+                                <div class="col-6">
+                                  <label for="realisasi" class="form-label">Realisasi</label>
+                                  <input type="text" class="form-control" id="realisasi">
                                 </div>
                                 <div class="col-md-6">
-                                  <label for="fotoGdrive" class="form-label">Foto Gdrive</label>
-                                  <input type="text" class="form-control" id="fotoGdrive">
+                                  <label for="sisaDana" class="form-label">Sisa Dana</label>
+                                  <input type="number" class="form-control" id="sisaDana">
                                 </div>
                                 <div class="col-md-6">
-                                  <label for="fileGdrive" class="form-label">Files Gdrive</label>
-                                  <input type="text" class="form-control" id="fileGdrive">
+                                  <label for="sumberDana" class="form-label">Sumber Dana</label>
+                                  <input type="text" class="form-control" id="sumberDana">
+                                </div>
+                                <div class="col-md-12">
+                                  <label for="persentase" class="form-label">Persentase Realisasi</label>
+                                  <input type="number" class="form-control" id="persentase">
                                 </div>
                               </form>
                             </div>
@@ -264,6 +271,14 @@
                         </div>
                       </div>
                     </div>
+                    <div class="col-md-4 mb-3">
+                      <select id="inputState" class="form-select">
+                        <option selected>Satuan Kerja</option>
+                        <option>Done</option>
+                        <option>Reject</option>
+                        <option>Progress</option>
+                      </select>
+                    </div>
                   </div>
                   <div class="table-responsive">
                     <table class="table text-center">
@@ -271,81 +286,73 @@
                         <tr>
                           <th>No.</th>
                           <th>Satuan Kerja</th>
-                          <th>Judul Dokumentasi</th>
-                          <th>Pers ( Gdrive )</th>
-                          <th>Foto ( Gdrive )</th>
-                          <th>Files ( Gdrive )</th>
+                          <th>Uraian</th>
+                          <th>Pagu</th>
+                          <th>Realisasi</th>
+                          <th>Sisa Dana</th>
+                          <th>Sumber Dana</th>
+                          <th>Persentase Realisasi</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td>1.</td>
                           <td>
-                            Masih Bekerja
+                            makhluk hidup
                           </td>
-                          <td> Kerja Rodi </td>
-                          <td>Alfamart </td>
-                          <td>Akuntansi</td>
-                          <td>2 Bulan</td>
-                          <td>
-                            <label class="badge badge-gradient-success">DONE</label>
-                          </td>
+                          <td> masih bekerja </td>
+                          <td> Management </td>
+                          <td>kerja sama dengan vendor</td>
+                          <td>Jakarta Barat</td>
+                          <td>30</td>
                         </tr>
 
                         <tr>
                           <td>2.</td>
                           <td>
-                            Masih Bekerja
+                            makhluk hidup
                           </td>
-                          <td> Kerja Rodi </td>
-                          <td>Alfamart </td>
-                          <td>Akuntansi</td>
-                          <td>2 Bulan</td>
-                          <td>
-                            <label class="badge badge-gradient-success">DONE</label>
-                          </td>
+                          <td> masih bekerja </td>
+                          <td> Management </td>
+                          <td>kerja sama dengan vendor</td>
+                          <td>Jakarta Barat</td>
+                          <td>30</td>
                         </tr>
 
                         <tr>
                           <td>3.</td>
                           <td>
-                            Masih Bekerja
+                            makhluk hidup
                           </td>
-                          <td> Kerja Rodi </td>
-                          <td>Alfamart </td>
-                          <td>Akuntansi</td>
-                          <td>2 Bulan</td>
-                          <td>
-                            <label class="badge badge-gradient-success">DONE</label>
-                          </td>
+                          <td> masih bekerja </td>
+                          <td> Management </td>
+                          <td>kerja sama dengan vendor</td>
+                          <td>Jakarta Barat</td>
+                          <td>30</td>
                         </tr>
 
                         <tr>
                           <td>4.</td>
                           <td>
-                            Masih Bekerja
+                            makhluk hidup
                           </td>
-                          <td> Kerja Rodi </td>
-                          <td>Alfamart </td>
-                          <td>Akuntansi</td>
-                          <td>2 Bulan</td>
-                          <td>
-                            <label class="badge badge-gradient-success">DONE</label>
-                          </td>
+                          <td> masih bekerja </td>
+                          <td> Management </td>
+                          <td>kerja sama dengan vendor</td>
+                          <td>Jakarta Barat</td>
+                          <td>30</td>
                         </tr>
 
                         <tr>
                           <td>5.</td>
                           <td>
-                            Masih Bekerja
+                            makhluk hidup
                           </td>
-                          <td> Kerja Rodi </td>
-                          <td>Alfamart </td>
-                          <td>Akuntansi</td>
-                          <td>2 Bulan</td>
-                          <td>
-                            <label class="badge badge-gradient-success">DONE</label>
-                          </td>
+                          <td> masih bekerja </td>
+                          <td> Management </td>
+                          <td>kerja sama dengan vendor</td>
+                          <td>Jakarta Barat</td>
+                          <td>30</td>
                         </tr>
                       </tbody>
                     </table>

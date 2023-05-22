@@ -21543,3 +21543,27 @@ svg:not(:root) {
   color: #000;
   padding-top: 5px;
 }
+
+/* download template excel */
+.demo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding-top: 40px;
+}
+
+.demo-container a button {
+  border: 0;
+  padding: 12px 32px 12px 32px;
+  letter-spacing: 1.2px;
+  background: #232329;
+  color: #f0f0f0;
+  border-radius: 30px;
+}
+
+.demo-container a:hover button {
+  cursor: pointer;
+  background: #424249;
+  color: white;
+}
